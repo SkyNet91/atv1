@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript2</title>
     <script>
-        function(txt);
+        function EscrevaMensagemSpan(txtDaMensagem){
+            let meuElemSpan = document.getElementById("meuSpanDaMensagem");
+            meuElemSpan.innerHTML = txtDaMensagem;
+        console.log(meuElemSpan);
+        }
+        EscrevaMensagemSpan("Minha mensagem que não aparece");
     </script>
 </head>
 <body>
     <marquee behavior="" direction="right"><h1>Conteúdo da página</h1></marquee>
-    <marquee behavior="" direction=""><span id="minha-mensagem"></span></marquee>
+    <marquee behavior="" direction=""><span id="meuSpanDaMensagem"></span></marquee>
 </body>
 </html>
